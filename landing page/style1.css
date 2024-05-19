@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    margin-right: 20px;
+    
+}
+.navbar a {
+    color: white;
+    text-decoration:none;
+    margin: 0 10px;
+    font: size 1.2em;;
+}
+.header {
+    position: relative;
+    height: 100vh;
+   
+    background: url('cover.jpg') no-repeat center center/cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.header h1 {
+    font-size: 4em;
+    z-index: 1;
+}
+.header p {
+    font-size: 1.5em;
+    z-index: 1;
+}
+.header .btn {
+    padding: 10px 15px;
+    background-color:rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 20px;
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+.header .btn:hover {
+    background-color: #403bd4;
+}
+.border{
+    
+}
+.events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 50px;
+    background: linear-gradient(to right,rgba(208, 151, 151, 0.753),rgba(117, 117, 43, 0.183) );
+    background: url('cover2.jpeg') no-repeat center center/cover;
+    height: 70vh;
+    
+}
+.event-card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin: 15px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    overflow: hidden; 
+    
+    transition: transform 0.4s;
+}
+.event-card:hover {
+    transform: scale(1.15);
+}
+.event-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.event-card .card-body {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.event-card h2 {
+    margin: 0 0 10px;
+}
+.event-card p {
+    margin: 0 0 15px;
+}
+.btn-custom {
+    padding: 10px 20px;
+    background-color: #6c63ff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-custom:hover {
+    background-color: #5752d5;
+}
